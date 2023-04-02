@@ -1,1 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #393e46;
+}
+/*header  */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #e97777;
+  z-index: 99;
+}
+.nav {
+  max-width: 1200px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+}
+.box {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+#cart-count {
+  background: #153462;
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#cart-icon {
+  padding-top: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+/* end of header  */
+
+/*container  */
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 4rem;
+  margin: auto;
+  width: 100%;
+}
+.title {
+  font-size: 1.2rem;
+  color: #ffff;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr));*/
+  justify-content: center;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.food-box {
+  
+  background: #ffff;
+  padding: 5px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  border-radius: 3px;
+  position: relative;
+}
+.img-container {
+  overflow: hidden;
+  }
+.food-img {
+  transition: 0.3s;
+  transform-origin: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.img-container:hover img {
+  transform: scale(1.3);
+}
+.food-title {
+  font-size: 1.1rem;
+  font-weight: 550;
+  text-transform: capitalize;
+  color: #e43939;
+  text-align: center;
+  
+}
+.fa-cart-shopping {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #ffff;
+  background: green;
+  padding: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom-right-radius: 2px;
+}
+.fa-cart-shopping:hover {
+  background: red;
+}
+
+/*cart*/
+.cart {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 400px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #ffff;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  z-index: 100;
+}
+.cart-active {
+  right: 0;
+  transition: 0.5s;
+}
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.cart-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  cursor: pointer;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-food-title {
+  color: #e97777;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cart-price {
+  font-weight: 500;
+}
+.cart-quentity {
+  width: 2.5rem;
+  outline: none;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.fa-trash {
+  font-size: 20px;
+  color: #e97777;
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.total-title {
+  font-weight: 600;
+  padding-right: 20px;
+}
+.total-price {
+}
+.buy-btn {
+  padding: 12px 20px;
+  outline: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  background: #e97777;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+.fa-circle-xmark {
+  position: absolute;
+  font-size: 1rem;
+  top: 28px;
+  right: 20px;
+  font-size: 1.2rem;
+  color: #e97777;
+  cursor: pointer;
+}
