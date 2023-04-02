@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+        integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="nav">
+            <a href="#" class="logo">🍔🍕🍟 Food delight</a>
+            <div class="box">
+                <i class="fa-solid fa-cart-plus" id="cart-icon"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <!--cart box-->
+            <div class="cart">
+                <div class="cart-title">cart items</div>
+                <div class="cart-content">
+
+                    <!-- <div class="cart-box">
+                        <img src="./images/cake-1.webp" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">pizza</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.72</div>
+                                <div class="cart-amt">Rs.72</div>
+                            </div>
+
+                            <input type="number" value="1" class="cart-quentity">
+                        </div>
+                        <i class="fa-solid fa-trash" id="delete" ></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="./images/cake-5.jpeg" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">pizza</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.72</div>
+                                <div class="cart-amt">Rs.72</div>
+                            </div>
+
+                            <input type="number" value="1" class="cart-quentity">
+                        </div>
+                        <i class="fa-solid fa-trash" id="delete"></i>
+                    </div>
+ -->
+
+                </div>
+                <div class="total">
+                    <div class="total-title">total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="buy-btn">place order</button>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <!--end of cart-->
+        </div>
+    </header>
+    <!--container-->
+    <div class="container">
+        <h2 class="title">Discover the best Food</h2>
+        <div class="shop-content">
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/pizza-1.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Tomato Pizza</h2>
+                <span class="food-price">Rs.80</span>
+                <i class="fa-solid fa-cart-shopping" id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/ice cream-1.webp" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Cup IceCream</h2>
+                <span class="food-price">Rs.50</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/pizza-3.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Veg Pizza</h2>
+                <span class="food-price">Rs.90</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/pizza-4.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Chess Pizza</h2>
+                <span class="food-price">Rs.120</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/ice cream-4.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Kulfi IceCream</h2>
+                <span class="food-price">Rs.60</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/pizza-6.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Mushroom Pizza</h2>
+                <span class="food-price">Rs.120</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/ice cream-5.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Pista IceCream</h2>
+                <span class="food-price">Rs.92</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/pizza-8.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">plain Pizza</h2>
+                <span class="food-price">Rs.95</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-1.webp" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Vennila Cake</h2>
+                <span class="food-price">Rs.200</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-2.webp" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Chocolate Cake</h2>
+                <span class="food-price">Rs.250</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-3.webp" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Mini CupCakes</h2>
+                <span class="food-price">Rs.150</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/ice cream-7.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">ButterScoth IceCream</h2>
+                <span class="food-price">Rs.150</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-9.webp" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">CupCakes</h2>
+                <span class="food-price">Rs.80</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-7.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Fruit Cake</h2>
+                <span class="food-price">Rs.300</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/ice cream-8.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Cookies</h2>
+                <span class="food-price">Rs.180</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+            </div>
+
+            <div class="food-box">
+                <div class="img-container">
+                    <img src="./images/cake-5.jpeg" class="food-img" alt="pic" />
+                </div>
+                <h2 class="food-title">Staberry Cake</h2>
+                <span class="food-price">Rs.280</span>
+                <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+          </div>
+
+          <div class="food-box">
+            <div class="img-container">
+                <img src="./images/cake-6.webp" class="food-img" alt="pic" />
+            </div>
+            <h2 class="food-title">Cream Cake</h2>
+            <span class="food-price">Rs.280</span>
+            <i class="fa-solid fa-cart-shopping"  id="add-cart"></i>
+      </div>
+
+      </div>
+    </div>
+    <script src=" js/app.js"></script>
+</body>
+
+</html>
