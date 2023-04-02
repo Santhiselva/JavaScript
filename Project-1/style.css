@@ -1,1 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 22px;
+}
+body {
+  background: #353b48;
+  padding: 1rem;
+}
+.box {
+  height: 8rem;
+  border: 5px solid #ffff;
+  overflow: hidden;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+  transform-origin: top;
+}
+.box img:hover{
+    transform: scale(1.5);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.control {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-group button{
+    width:100px;
+    height:30px;
+    border:none;
+   color:#fff;
+   font-size:0.7rem;
+    background: #00b894;
+    border:2px solid #00b894;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-group button:hover, .btn-group .btn-clicked{
+    background: #353b48;
+}
+#search{
+    width:200px;
+    height: 30px;
+    border:2px solid #00b894;
+    outline: none;
+    padding:0px 10px;
+    border-radius: 3px;
+    font-size: 0.6rem;
+}
